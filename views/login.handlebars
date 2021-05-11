@@ -1,0 +1,60 @@
+<div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active link-secondary" id="signIn-tab" data-bs-toggle="tab" data-bs-target="#signIn"
+                        type="button" role="tab" aria-controls="signIn" aria-selected="true">Sign In</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link link-secondary" id="signUp-tab" data-bs-toggle="tab" data-bs-target="#signUp" type="button"
+                        role="tab" aria-controls="signUp" aria-selected="false">Sign Up</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
+                    <div class="col">
+                        <form>
+                            <div class="mb-3 form-floating">
+                                <input type="email" class="form-control" id="signInEmail" placeholder="Email"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                <label for="signInEmail" class="form-label">Email address</label>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="password" class="form-control" id="signInPass" placeholder="Password">
+                                <label for="signInPass" class="form-label" id="floating-password">Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Log In</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="signUp" role="tabpanel" aria-labelledby="signUp-tab">
+                    <div class="col">
+                        <form class="row g-3">
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control" id="inputFirstName" placeholder="John">
+                              <label for="inputFirstName" class="form-label">First Name</label>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="password" class="form-control" id="inputLastName" placeholder="Smith">
+                              <label for="inputLastName" class="form-label">Last Name</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                              <label for="inputEmail" class="form-label">Email</label>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control" id="inputPassword" placeholder="Password">
+                                <label for="inputPassword" class="form-label">Password</label>
+                              </div>
+                              <div class="col-md-6 form-floating">
+                                  <input type="password" class="form-control" id="inputConfirmPass" placeholder="P  assword">
+                                <label for="inputConfirmPass" class="form-label">Confirm Password</label>
+                              </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>

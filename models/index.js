@@ -5,7 +5,7 @@ const Review = require('./Review');
 const CompanyReview = require('./CompanyReview');
 
 // User has many Reviews
-User.hasMany(Reviews, {
+User.hasMany(Review, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
 }); 
@@ -16,7 +16,7 @@ Review.belongsTo(User, {
 });
 
 // Company has many Reviews
-Company.hasMany(Review, {
+Company.belongsToMany(Review, {
     foreignKey: 'company_id',
     through: CompanyReview
 });
