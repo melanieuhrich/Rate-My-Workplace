@@ -42,14 +42,14 @@
                     </div>
                 </div>
                 <div class="col-8">
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row ">
+                        <div class="col">
                             {{glassdoor_rating_1}}
                         </div>
-                        <div class="col-4">
+                        <div class="col">
                             {{glassdoor_rating_2}}
                         </div>
-                        <div class="col-4">
+                        <div class="col">
                             {{glassdoor_rating_3}}
                         </div>
                     </div>
@@ -59,27 +59,34 @@
                 </div>
             </div>
             <div class="row">
+                {{user updates}}
+            </div>
+            <div class="row">
                 <div class="col">
                     <form class="row g-3">
                         <div class="col-md-6 form-floating">
-                            <input type="email" class="form-control" id="inputFirstName" placeholder="John">
-                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="inputSafetyCulture" placeholder="Safety Culture">
+                            <label for="inputSafetyCulture" class="form-label">Safety Culture</label>
                         </div>
                         <div class="col-md-6 form-floating">
-                            <input type="password" class="form-control" id="inputLastName" placeholder="Smith">
-                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="inputSafetyTraining" placeholder="Safety Training">
+                            <label for="inputSafetyTraining" class="form-label">Safety Training</label>
                         </div>
                         <div class="col-md-6 form-floating">
-                            <input type="email" class="form-control" id="inputPassword" placeholder="Password">
-                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="inputHazardId" placeholder="Hazard Id">
+                            <label for="inputHazardId" class="form-label">Hazard Id</label>
                         </div>
                         <div class="col-md-6 form-floating">
-                            <input type="password" class="form-control" id="inputConfirmPass" placeholder="P  assword">
-                            <label for="inputConfirmPass" class="form-label">Confirm Password</label>
+                            <input type="text" class="form-control" id="inputLeadEmphasis" placeholder="Lead Emphasis">
+                            <label for="inputLeadEmphasis" class="form-label">Lead Emphasis</label>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control" id="inputSafetyManager" placeholder="Safety Manager">
+                            <label for="inputSafetyManager" class="form-label">Safety Manager</label>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Comments</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Comments</label>
                           </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Submit Rating</button>
