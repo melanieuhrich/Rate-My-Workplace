@@ -1,0 +1,47 @@
+<img src="./public/assets/pixel-art-business-workplace_2009874.jpg" alt="" class="img-fluid">
+        <div class="searchBars shadow-lg p-3 mb-5 rounded">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active link-secondary" id="signIn-tab" data-bs-toggle="tab" data-bs-target="#signIn"
+                        type="button" role="tab" aria-controls="signIn" aria-selected="true">Search By Company</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link link-secondary" id="signUp-tab" data-bs-toggle="tab" data-bs-target="#signUp" type="button"
+                        role="tab" aria-controls="signUp" aria-selected="false">Search by Location and Industry</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
+                    <div class="col">
+                        <form>
+                            <div class="mb-3 form-floating">
+                                <input type="text" class="form-control" id="companyInput" placeholder="Company"
+                                    aria-describedby="companyHelp">
+                                <div id="companyHelp" class="form-text text-dark">Choose a company to search for</div>
+                                <label for="companyInput" class="form-label">Company</label>
+                            </div>
+                            <button type="search" class="btn btn-secondary">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="signUp" role="tabpanel" aria-labelledby="signUp-tab">
+                    <div class="col">
+                        <form>
+                            <div class="mb-3 form-floating">
+                                <input type="text" class="form-control" id="locationInput" placeholder="Location"
+                                    aria-describedby="locationHelp">
+                                    <div id="locationHelp" class="form-text text-dark">Choose a location to search from</div>
+                                <label for="locationInput" class="form-label">Location</label>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="text" class="form-control" id="industryInput" placeholder="Industry"
+                                    aria-describedby="industryHelp">
+                                    <div id="industryHelp" class="form-text text-dark">Choose an industry to search for</div>
+                                <label for="industryInput" class="form-label">Industry</label>
+                            </div>
+                            <button type="search" class="btn btn-secondary">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>

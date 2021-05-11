@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Workplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light pt-5 ">
+        <div class="container-fluid d-flex align-items-end">
+            <a class="navbar-brand logo d-flex align-items-end" href="/home"><img src="./public/assets/Logo/logo1.png"
+                    alt="" class="pe-3"> Rate My Workplace</a>
+            <form class="d-flex">
+                <a class="nav-link link-secondary" href="/resources">Resources</a>
+                <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
+                <a class="nav-link link-secondary" href="/about-us">About Us</a>
+            </form>
+        </div>
+    </nav>
+    <main class="d-flex justify-content-center mainBody">
+        <section class="container-fluid m-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-3">
+                            {{<img src="#" alt="company logo">}}
+                        </div>
+                        <div class="col-9">
+                            {{company_name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{location}}
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-4">
+                            {{glassdoor_rating_1}}
+                        </div>
+                        <div class="col-4">
+                            {{glassdoor_rating_2}}
+                        </div>
+                        <div class="col-4">
+                            {{glassdoor_rating_3}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{our_rating}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form class="row g-3">
+                        <div class="col-md-6 form-floating">
+                            <input type="email" class="form-control" id="inputFirstName" placeholder="John">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="password" class="form-control" id="inputLastName" placeholder="Smith">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="email" class="form-control" id="inputPassword" placeholder="Password">
+                            <label for="inputPassword" class="form-label">Password</label>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="password" class="form-control" id="inputConfirmPass" placeholder="P  assword">
+                            <label for="inputConfirmPass" class="form-label">Confirm Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                          </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit Rating</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-secondary">Report This Company</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
