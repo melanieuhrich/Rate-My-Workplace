@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
 
         const companies = companyData.map((company) => company.get({ plain: true }));
 
+        console.log(companies)
         res.render('company', {
             companies
         });
