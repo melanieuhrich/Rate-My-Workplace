@@ -17,31 +17,35 @@ Company.init(
         },
         location: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true,
+        },
+        industry: {
+            type: DataTypes.STRING,
+            allowNull: true,
         },
         company_url: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         logo_url: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         gd_rating_1: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
         },
         gd_rating_2: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
         },
         gd_rating_3: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
         },
         our_rating: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
         }
     },
     {
