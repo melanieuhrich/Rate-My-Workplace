@@ -22,3 +22,22 @@
     align-content: flex-start;
     align-items: center;
   }
+
+.ourRating {
+    font-size:large;
+    text-decoration: underline;
+}
+
+  .rating {
+      font-size:xx-large;
+      font-weight:bolder;
+      color: rgb(4, 167, 4);
+  }
+
+.ratingSubmit {
+    text-align: center;
+}
+
+.center {
+    text-align:center !important;
+}
