@@ -1,20 +1,13 @@
-<div class="companies">
-    <div class="card-header col-md-10">
-        <h2>
-            {{!-- &#127869 Current Menu --}}
-        </h2>
+{{#each company as |company|}}
+<div class="card bg-light" style="width: 18rem;">
+    <div class="card-body">
+        <!-- Might be wrong??? -->
+        <a href="/company">
+            <h5 class="card-title">{{company.name}}</h5>
+        </a>
+        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
+        <p class="card-text">Our Rating: {{company.our_rating}}</p>
     </div>
-    <!-- For each dish in the array of dish objects, the following <div> will be rendered. -->
-    {{#each company as |company|}}
-    <div class="companies col-md-5">
-        <!-- We use dish.id instead of <od> and <li> elements. -->
-        <p>
-            {{company.id}}.
-            {{company.company_name}}
-        </p>
-    </div>
-    <div class="col-md-7">
-        <p></p>
-    </div>
-    {{/each}}
 </div>
+
+{{/each}}
