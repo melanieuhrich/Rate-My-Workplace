@@ -16,47 +16,53 @@
 <body>
     <div class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
-            <h1 class="display-4">About Us</h1>
-        </div>
-    </div> 
-    <br>
-    <br>
-    <br>
-    <div class="row bio-row">
-        <div class="card bg-light col bio" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Jeremy Joanet</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Project Manager</h6>
-                <p class="card-text">~Insert bio here~</p>
-                <a href="#" class="card-link">~Insert GitHub here~</a>
-            </div>
-        </div>
-        <div class="card bg-light col bio" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Melanie Uhrich</h5>
-                <p class="card-text">~Insert bio here~</p>
-                <a href="#" class="card-link">https://github.com/melanieuhrich</a>
-            </div>
+            <h1 class="display-4">Review {{company.name}}</h1>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="row bio-row">
-        <div class="card bg-light col bio" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Justin Lindsey</h5>
-                <p class="card-text">~Insert bio here~</p>
-                <a href="#" class="card-link">~Insert GitHub here~</a>
-            </div>
+    <div class="row border rounded py-2 ">
+        <div class="col review">
+            <form class="row g-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="inputSafetyCulture" placeholder="Safety Culture">
+                    <label for="inputSafetyCulture" class="form-label">Title your review</label>
+                </div>
+                <div>
+                    <label for="customRange3" class="form-label">Safety Culture</label> <br>
+                    <label class="description">Rate the safety culture in your workplace on a scale of 0 to 5, with 0 being not safe at all and 5 being very safe.</label>
+                    <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                </div>
+                <div>
+                    <label for="customRange3" class="form-label">Safety Training</label> <br>
+                    <label class="description">Does your workplace implement a safety training? How would you rate it?</label>
+                    <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                </div>
+                <div>
+                    <label for="customRange3" class="form-label">Hazard Identification</label> <br>
+                    <label class="description">How would you rate your workplace's hazard identification practices?</label>
+                    <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                </div>
+                <div>
+                    <label for="customRange3" class="form-label">Leadership's Emphasis on Safety</label> <br> 
+                    <label class="description">How would you rate your leadership's emphasis on safety?</label>
+                    <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                </div>
+                <div>
+                    <label for="customRange3" class="form-label">Safety Manager</label> <br>
+                    <label class="description">Does your workplace have a safety manager? If so, how would you rate them?</label>
+                    <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="inputSafetyCulture" placeholder="Safety Culture">
+                    <label for="inputSafetyCulture" class="form-label">Tell us what you think...</label>
+                </div>
+                <div class="col-12 ratingSubmit">
+                    <button type="submit" class="btn btn-primary">Submit Rating</button>
+                </div>
+            </form>
         </div>
-        <div class="card bg-light col bio" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Alfredo Tlahuel</h5>
-                <p class="card-text">~Insert bio here~</p>
-                <a href="#" class="card-link">~Insert GitHub here~</a>
-            </div>
-        </div>
+    </div>
+    <div class="row justify-content-center reportSubmit mt-4">
+        <button type="submit" class="btn btn-secondary">Report This Company</button>
     </div>
 </body>
 
