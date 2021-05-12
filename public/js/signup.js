@@ -1,5 +1,5 @@
-const router = require("../../controllers/api/user-routes");
-const { User } = require("../../models");
+// const router = require("../../controllers/api/user-routes");
+// const { User } = require("../../models");
 
 const signupFormHandler = async(event) => {
     event.preventdefault();
