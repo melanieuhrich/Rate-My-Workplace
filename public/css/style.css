@@ -22,3 +22,15 @@
     align-content: flex-start;
     align-items: center;
   }
+
+.bio-row{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.bio {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+}
