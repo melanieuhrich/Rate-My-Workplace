@@ -22,3 +22,44 @@
     align-content: flex-start;
     align-items: center;
   }
+
+.ourRating {
+    font-size:large;
+    text-decoration: underline;
+}
+
+  .rating {
+      font-size:xx-large;
+      font-weight:bolder;
+      color: rgb(4, 167, 4);
+  }
+
+.ratingSubmit {
+    text-align: center;
+}
+
+.center {
+    text-align:center !important;
+}
+
+.bio-row{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.bio {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.review {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.description {
+    font-size: 15px;
+} 
