@@ -3,14 +3,6 @@ const loginFormHandler = async (event) => {
   
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
-    // const passconfirm = document.querySelector('#password-confirm').value.trim();
-    // const firstName = document.querySelector('#first-name').value.trim();
-    // const lastName = document.querySelector('#last-name').value.trim();
-
-    // const passTrue = false;
-    // if(password === passconfirm){
-    //     return passTrue = true;
-    // }
   
     if (email && password) {
       const response = await fetch('/api/users/login', {
@@ -28,5 +20,5 @@ const loginFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.login-form')
-    .addEventListener('submit', loginFormHandler);
+    .querySelector('#signIn')
+    .addEventListener('#login-submit', loginFormHandler);
