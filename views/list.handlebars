@@ -1,4 +1,9 @@
-{{#each company as |company|}}
+
+<div class="container">
+<div class="row">
+{{#each companies as |company|}}
+<br>
+<div class="col-lg-6">
 <div class="card bg-light" style="width: 18rem;">
     <div class="card-body">
         <!-- Might be wrong??? -->
@@ -9,5 +14,7 @@
         <p class="card-text">Our Rating: {{company.our_rating}}</p>
     </div>
 </div>
-
+</div>
 {{/each}}
+</div>
+</div>
