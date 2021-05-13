@@ -1,8 +1,9 @@
 const router = require("express").Router();
 const { Company } = require("../../models");
+const withAuth = require("../../utils/auth");
 
 // Gets all companies
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     const companyData = await Company.findAll();
 
@@ -11,7 +12,7 @@ router.get("/", async (req, res) => {
     );
 
     console.log(companies);
-    res.render("list", {
+    res.render("list", {logged_in: req.session.logged_in}, {
       companies,
     });
   } catch (err) {
