@@ -1,8 +1,10 @@
+const withAuth = require('../../utils/auth');
+
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
-        res.render('resources');
+        res.render('resources', {logged_in: true});
     } catch (err) {
         res.status(500).json(err);
     }
