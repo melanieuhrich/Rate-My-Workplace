@@ -12,9 +12,7 @@ router.get("/", withAuth, async (req, res) => {
     );
 
     console.log(companies);
-    res.render("list", {logged_in: req.session.logged_in}, {
-      companies,
-    });
+    res.render("list", { logged_in: req.session.logged_in, companies });
   } catch (err) {
     res.status(500).json(err);
   }
