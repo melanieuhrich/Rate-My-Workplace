@@ -4,7 +4,7 @@ const { User } = require('../models');
 const { restore } = require('../models/Review');
 
 router.get('/', withAuth, async (req, res) => {
-    res.render('homepage')
+    res.render('homepage', {logged_in: req.session.logged_in})
 })
 
 router.get('/login', (req, res) => {
@@ -13,7 +13,7 @@ router.get('/login', (req, res) => {
         return;
     }
 
-    res.render('login')
+    res.render('login', {logged_in: false})
 });
 
 router.get('/about-us', (req, res) => {

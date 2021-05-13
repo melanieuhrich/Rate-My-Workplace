@@ -1,48 +1,69 @@
-<div class="row my-5">
-    <div class="card row col-sm-12 container mb-5 bg-light">
-        <div class="card-body text-center">
-            <h1>About Us</h1>
+<nav class="navbar navbar-light bg-light pt-5 ">
+    <div class="container-fluid d-flex align-items-end">
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
+        <form class="d-flex">
+            <a class="nav-link link-secondary" href="/query/resources">Resources</a>
+            {{#if logged_in}}
+            <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
+            {{else}}
+            <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
+            {{/if}}
+            <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
+        </form>
+    </div>
+</nav>
+
+
+<main class="d-flex justify-content-center mainBody">
+    <div class="row my-5">
+        <div class="card row col-sm-12 container mb-5 bg-light">
+            <div class="card-body text-center">
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+        <div class="container row mx-5 text-center">
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
+                <img src="/assets/Jeremy.jpg" class="card-img-top" alt="Jeremy">
+                <div class="card-body">
+                    <h5 class="card-title">Jeremy Joanet</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://github.com/Vygoth" target="_blank" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
+                <img src="/assets/Alfredo.jpg" class="card-img-top" alt="Alfredo">
+                <div class="card-body">
+                    <h5 class="card-title">Alfredo Tlahuel</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://github.com/Vfredo602" target="_blank" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
+                <img src="/assets/Justin.jpg" class="card-img-top" alt="Justin">
+                <div class="card-body">
+                    <h5 class="card-title">Justin Lindsey</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://github.com/JusticeGTR" target="_blank" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
+                <img src="/assets/Melanie.jpg" class="card-img-top" alt="Melanie">
+                <div class="card-body">
+                    <h5 class="card-title">Melanie Uhrich</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://github.com/melanieuhrich" target="_blank" class="btn btn-primary">Github</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="container row col-sm-12 mx-5 text-center">
-
-        <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
-            <img src="/assets/Jeremy.jpg" class="card-img-top" alt="Jeremy">
-            <div class="card-body">
-                <h5 class="card-title">Jeremy Joanet</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://github.com/Vygoth" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
-            <img src="/assets/Alfredo.jpg" class="card-img-top" alt="Alfredo">
-            <div class="card-body">
-                <h5 class="card-title">Alfredo Tlahuel</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://github.com/Vfredo602" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
-            <img src="/assets/Justin.jpg" class="card-img-top" alt="Justin">
-            <div class="card-body">
-                <h5 class="card-title">Justin Lindsey</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://github.com/JusticeGTR" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-        </div>
-
-        <div class="card col-sm-12 col-md-6 col-lg-3 bg-light mx-2 my-2">
-            <img src="/assets/Melanie.jpg" class="card-img-top" alt="Melanie">
-            <div class="card-body">
-                <h5 class="card-title">Melanie Uhrich</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://github.com/melanieuhrich" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-        </div>
-
-
-    </div>
-</div>
+</main>
