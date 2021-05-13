@@ -19,9 +19,12 @@
             <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt="" class="pe-3">      Rate My Workplace</a>
             <form class="d-flex">
                 <a class="nav-link link-secondary" href="/query/resources">Resources</a>
+                {{#if logged_in}}
+                <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
+                {{else}}
                 <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
-                <a class="" id='logout-button' href="">Logout</a>
-                <a class="" id='company-list' href="/query/companies">List of Companies</a>
+                {{/if}}
+                <a class="nav-link link-secondary" id='company-list' href="/query/companies">List of Companies</a>
                 <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
             </form>
         </div>
