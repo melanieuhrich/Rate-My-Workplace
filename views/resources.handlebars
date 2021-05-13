@@ -1,47 +1,65 @@
-<div class="row col-sm-12 my-5 mx-5 container">
-    <div class="card row col-sm-8 col-md-5 my-3 mx-5">
-        <img src="/assets/Osha_Header.PNG" class="card-img-top my-2" alt="Osha" height="auto">
-        <div class="card-body">
-            <h5 class="card-title">Osha Laws and Regulations</h5>
-            <p class="card-text">Osha's compiled list of law's and regulations.</p>
-            <a href="https://www.osha.gov/laws-regs" target="_blank" class="btn btn-primary">Go</a>
-        </div>
+<nav class="navbar navbar-light bg-light pt-5 ">
+    <div class="container-fluid d-flex align-items-end">
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
+        <form class="d-flex">
+            <a class="nav-link link-secondary" href="/query/resources">Resources</a>
+            {{#if logged_in}}
+            <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
+            {{else}}
+            <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
+            {{/if}}
+            <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
+        </form>
     </div>
+</nav>
 
-    <div class="card row col-sm-8 col-md-5 my-3 mx-5">
-        <img src="/assets/CDC.PNG" class="card-img-top my-2" alt="CDC" height="auto">
-        <div class="card-body">
-            <h5 class="card-title">CDC - NIOSH</h5>
-            <p class="card-text">CDC's National Institute for Occupational Safety and Health.</p>
-            <a href="https://www.cdc.gov/niosh/" target="_blank" class="btn btn-primary">Go</a>
+<main class="d-flex justify-content-center mainBody">
+    <div class="row col-sm-12 my-5 mx-5 container">
+        <div class="card row col-sm-8 col-md-5 my-3 mx-5">
+            <img src="/assets/Osha_Header.PNG" class="card-img-top my-2" alt="Osha" height="auto">
+            <div class="card-body">
+                <h5 class="card-title">Osha Laws and Regulations</h5>
+                <p class="card-text">Osha's compiled list of law's and regulations.</p>
+                <a href="https://www.osha.gov/laws-regs" target="_blank" class="btn btn-primary">Go</a>
+            </div>
         </div>
-    </div>
 
-    <div class="card row col-sm-8 col-md-5 my-3 mx-5">
-        <img src="/assets/OASH.PNG" class="card-img-top my-2" alt="Oash" height="auto">
-        <div class="card-body">
-            <h5 class="card-title">OASH's breastfeeding guide.</h5>
-            <p class="card-text">Office on Women's Health guidelines, and tips for pumping at work.</p>
-            <a href="https://www.womenshealth.gov/breastfeeding/breastfeeding-home-work-and-public/breastfeeding-and-going-back-work/#4"
-                target="_blank" class="btn btn-primary">Go</a>
+        <div class="card row col-sm-8 col-md-5 my-3 mx-5">
+            <img src="/assets/CDC.PNG" class="card-img-top my-2" alt="CDC" height="auto">
+            <div class="card-body">
+                <h5 class="card-title">CDC - NIOSH</h5>
+                <p class="card-text">CDC's National Institute for Occupational Safety and Health.</p>
+                <a href="https://www.cdc.gov/niosh/" target="_blank" class="btn btn-primary">Go</a>
+            </div>
         </div>
-    </div>
 
-    <div class="card row col-sm-8 col-md-5 my-3 mx-5">
-        <img src="/assets/CDC.PNG" class="card-img-top my-2" alt="CDC" height="auto">
-        <div class="card-body">
-            <h5 class="card-title">CDC - NIOSH</h5>
-            <p class="card-text">CDC's National Institute for Occupational Safety and Health.</p>
-            <a href="https://www.cdc.gov/niosh/" target="_blank" class="btn btn-primary">Go</a>
+        <div class="card row col-sm-8 col-md-5 my-3 mx-5">
+            <img src="/assets/OASH.PNG" class="card-img-top my-2" alt="Oash" height="auto">
+            <div class="card-body">
+                <h5 class="card-title">OASH's breastfeeding guide.</h5>
+                <p class="card-text">Office on Women's Health guidelines, and tips for pumping at work.</p>
+                <a href="https://www.womenshealth.gov/breastfeeding/breastfeeding-home-work-and-public/breastfeeding-and-going-back-work/#4"
+                    target="_blank" class="btn btn-primary">Go</a>
+            </div>
         </div>
-    </div>
 
-    <div class="card row col-sm-8 col-md-5 my-3 mx-5">
-        <img src="/assets/MSDSLogo.PNG" class="card-img-top my-2" alt="MSDS" height="auto">
-        <div class="card-body">
-            <h5 class="card-title">MSDS</h5>
-            <p class="card-text">MSDS Authoring Services, Inc.</p>
-            <a href="https://msdsauthoring.com/" target="_blank" class="btn btn-primary">Go</a>
+        <div class="card row col-sm-8 col-md-5 my-3 mx-5">
+            <img src="/assets/CDC.PNG" class="card-img-top my-2" alt="CDC" height="auto">
+            <div class="card-body">
+                <h5 class="card-title">CDC - NIOSH</h5>
+                <p class="card-text">CDC's National Institute for Occupational Safety and Health.</p>
+                <a href="https://www.cdc.gov/niosh/" target="_blank" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+        <div class="card row col-sm-8 col-md-5 my-3 mx-5">
+            <img src="/assets/MSDSLogo.PNG" class="card-img-top my-2" alt="MSDS" height="auto">
+            <div class="card-body">
+                <h5 class="card-title">MSDS</h5>
+                <p class="card-text">MSDS Authoring Services, Inc.</p>
+                <a href="https://msdsauthoring.com/" target="_blank" class="btn btn-primary">Go</a>
+            </div>
         </div>
     </div>
-</div>
+</main>
