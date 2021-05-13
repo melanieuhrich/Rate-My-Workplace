@@ -1,0 +1,13 @@
+{{#each company as |company|}}
+<div class="card bg-light" style="width: 18rem;">
+    <div class="card-body">
+        <!-- Might be wrong??? -->
+        <a href="/company">
+            <h5 class="card-title">{{company.name}}</h5>
+        </a>
+        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
+        <p class="card-text">Our Rating: {{company.our_rating}}</p>
+    </div>
+</div>
+
+{{/each}}
