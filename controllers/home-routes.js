@@ -3,7 +3,7 @@ const withAuth = require('../utils/auth');
 const { User } = require('../models');
 const { restore } = require('../models/Review');
 
-router.get('/homepage', withAuth, async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     res.render('homepage')
 })
 
