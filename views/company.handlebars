@@ -1,133 +1,91 @@
-<section class="container-fluid m-5">
-
-            <!-- beginning of Our Rating section -->
-            <div class="row bg-white border rounded py-2 mb-5">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            {{Company Logo}}
-                        </div>
-                        <div class="col-9">
-                            <h2>{{Company Name}}</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        {{Company Location}}
-                    </div>
-                </div>
-                <div class="col-8 center">
-                    <p class="ourRating ">
-                        Our Rating
-                    </p>
-                    <p class="rating center">
-                        {{ourRating}}
-                    </p>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="text-decoration-underline">Safety Culture</div> <span
-                                class="">{{totalSafetyCulture}}</span>
-                        </div>
-                        <div class="col-4">
-                            <div class="text-decoration-underline">Safety Training</div> <span
-                                class="">{{totalSafetyTraining}}</span>
-                        </div>
-                        <div class="col-4">
-                            <div class="text-decoration-underline">Hazard Id</div> <span
-                                class="">{{totalHazardId}}</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="text-decoration-underline">Lead Emphasis</div> <span
-                                class="">{{totalLeadEmphasis}}</span>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-decoration-underline">Safety Manager</div> <span
-                                class="">{{totalSafetyManager}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="userRatings">
-                <!-- beginning of member ratings list -->
-                {{#each userReview}}
-                <div class="row bg-light border rounded my-4 py-2">
-                    <div class="col-3 border-end bg-light px-4">
-                        <div class="row">
-                            <h5>{{userName}}</h5>
-                        </div>
-                        <div class="row">
-                            {{dateAdded}}
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row center">
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Safety Culture</div> <span
-                                    class="">{{userSafetyCulture}}</span>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Safety Training</div> <span
-                                    class="">{{userSafetyTraining}}</span>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Hazard Id</div> <span
-                                    class="">{{userHazardId}}</span>
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col-6">
-                                <div class="text-decoration-underline">Lead Emphasis</div> <span
-                                    class="">{{userLeadEmphasis}}</span>
-                            </div>
-                            <div class="col-6">
-                                <div class="text-decoration-underline">Safety Manager</div> <span
-                                    class="">{{userSafetyManager}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row bg-light border rounded my-4 py-2">
-                    <div class="col-3 border-end bg-light px-4">
-                        <div class="row">
-                            <h5>{{userName}}</h5>
-                        </div>
-                        <div class="row">
-                            {{dateAdded}}
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row center">
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Safety Culture</div> <span
-                                    class="">{{userSafetyCulture}}</span>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Safety Training</div> <span
-                                    class="">{{userSafetyTraining}}</span>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-decoration-underline">Hazard Id</div> <span
-                                    class="">{{userHazardId}}</span>
-                            </div>
-                        </div>
-                        <div class="row center">
-                            <div class="col-6">
-                                <div class="text-decoration-underline">Lead Emphasis</div> <span
-                                    class="">{{userLeadEmphasis}}</span>
-                            </div>
-                            <div class="col-6">
-                                <div class="text-decoration-underline">Safety Manager</div> <span
-                                    class="">{{userSafetyManager}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{/each}}
-            </div>
-        </section>
-    <div class="row justify-content-center reportSubmit mt-4">
-        <button type="submit" class="btn btn-secondary"><a href="https://www.osha.gov/pls/osha7/eComplaintForm.html">Report This Company</a></button>
+<nav class="navbar navbar-light bg-light pt-5 ">
+    <div class="container-fluid d-flex align-items-end">
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
+        <form class="d-flex">
+            <a class="nav-link link-secondary" href="/query/resources">Resources</a>
+            {{#if logged_in}}
+            <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
+            {{else}}
+            <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
+            {{/if}}
+            <a class="nav-link link-secondary" href="/query/companies">Company List</a>
+            <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
+        </form>
     </div>
+</nav>
+
+<main class="justify-content-center mainBody my-5 mx-5">
+    <div class="row">
+        <img class="col-sm-6" src={{company.logo_url}} alt={{company.name}}>
+        <div class="card col-sm-6 bg-light">
+            <div class="card-body text-center position-absolute top-50 start-50 translate-middle">
+                <h1>{{company.name}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="card col-sm-5 mx-5 bg-light">
+            <div class="card-body text-center">
+                <h2>Industry: {{company.industry}}</h2>
+            </div>
+        </div>
+        <div class="card col-sm-5 mx-5 bg-light">
+            <div class="card-body text-center">
+                <h2>HQ Location: {{company.location}}</h2>
+            </div>
+        </div>
+    </div>
+
+    {{#if reviews.length}}
+    <div>
+        {{!-- review list populates here --}}
+        <h1 class="text-center">Number Ratings are out of 5.</h1>      
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Review Title</th>
+                    <th scope="col">Safety Culture</th>
+                    <th scope="col">Safety Training</th>
+                    <th scope="col">Hazard Identification</th>
+                    <th scope="col">Does This Company Have Designated Safety Managers?</th>
+                    <th scope="col">Leadership Emphasis on Safety</th>
+                    <th scope="col">Additional Comments</th>
+                </tr>
+            </thead>
+            {{#each reviews as |review|}}
+            <tbody>
+                <tr>
+                    <th scope="row">{{review.title}}</th>
+                    <td>{{review.safety_culture}}</td>
+                    <td>{{review.safety_training}}</td>
+                    <td>{{review.hazard_id}}</td>
+                    <td>{{review.safety_manager}}</td>
+                    <td>{{review.lead_emphasis}}</td>
+                    <td>{{review.contents}}</td>
+                </tr>
+            </tbody>
+            {{/each}}
+        </table>
+    </div>
+
+    {{else}}
+        <div class="text-center">
+            <h2>No Current Reviews, Be the First To Add One!</h2>
+        </div>
+    {{/if}}
+</main>
+
+<div class="row">
+    <button class="btn btn-secondary col-sm-5 mx-5" href="https://www.osha.gov/pls/osha7/eComplaintForm.html"
+        class="mx-5" target="_blank">
+        Report
+    </button>
+    <button class="btn btn-secondary col-sm-5 mx-5" class="mx-5">
+        <a href="/query/reviews/{{company.id}}" class="nav-link link-light">
+        Add a review
+        </a>
+    </button>
+</div>
+{{!-- {{company}} --}}

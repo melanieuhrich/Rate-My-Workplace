@@ -1,19 +1,38 @@
-<div class="container">
-<div class="row">
-{{#each companies as |company|}}
-<br>
-<div class="col-lg-6">
-<div class="card bg-light" style="width: 18rem;">
-    <div class="card-body">
-        <!-- Might be wrong??? -->
-        <a href="/company">
-            <h5 class="card-title">{{company.name}}</h5>
-        </a>
-        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
-        <p class="card-text">Our Rating: {{company.our_rating}}</p>
+<nav class="navbar navbar-light bg-light pt-5 ">
+    <div class="container-fluid d-flex align-items-end">
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
+        <form class="d-flex">
+            <a class="nav-link link-secondary" href="/query/resources">Resources</a>
+            {{#if logged_in}}
+            <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
+            {{else}}
+            <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
+            {{/if}}
+            <a class="nav-link link-secondary" href="/query/companies">Company List</a>
+            <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
+        </form>
     </div>
-</div>
-</div>
-{{/each}}
-</div>
-</div>
+</nav>
+<main class="d-flex justify-content-center mainBody">
+
+    <div class="container my-5">
+        <div class="row my-5">
+            {{#each companies as |company|}}
+            <br>
+            <div class="col-lg-6 my-2">
+                <div class="card bg-light" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Might be wrong??? -->
+                        <a href="/query/companies/{{company.id}}" class="nav-link link-primary">
+                            <h5 class="card-title">{{company.name}}</h5>
+                        </a>
+                        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</main>
