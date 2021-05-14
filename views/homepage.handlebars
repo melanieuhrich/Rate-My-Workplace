@@ -1,6 +1,7 @@
 <nav class="navbar navbar-light bg-light pt-5 ">
     <div class="container-fluid d-flex align-items-end">
-        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt="" class="pe-3">      Rate My Workplace</a>
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
         <form class="d-flex">
             <a class="nav-link link-secondary" href="/query/resources">Resources</a>
             {{#if logged_in}}
@@ -14,54 +15,19 @@
     </div>
 </nav>
 
-<main class="d-flex justify-content-center mainBody">
+<main class="d-flex justify-content-center">
     <img src="/assets/pixel-art-business-workplace_2009874.jpg" alt="" class="img-fluid">
-        <div class="searchBars shadow-lg p-3 mb-5 rounded">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active link-secondary" id="signIn-tab" data-bs-toggle="tab" data-bs-target="#signIn"
-                        type="button" role="tab" aria-controls="signIn" aria-selected="true">Search By Company</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link link-secondary" id="signUp-tab" data-bs-toggle="tab" data-bs-target="#signUp" type="button"
-                        role="tab" aria-controls="signUp" aria-selected="false">Search by Location and Industry</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
-                    <div class="col">
-                        <form>
-                            <div class="mb-3 form-floating">
-                                <input type="text" class="form-control" id="companyInput" placeholder="Company"
-                                    aria-describedby="companyHelp">
-                                <div id="companyHelp" class="form-text text-dark">Choose a company to search for</div>
-                                <label for="companyInput" class="form-label">Company</label>
-                            </div>
-                            <button type="search" class="btn btn-secondary">Search</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="signUp" role="tabpanel" aria-labelledby="signUp-tab">
-                    <div class="col">
-                        <form>
-                            <div class="mb-3 form-floating">
-                                <input type="text" class="form-control" id="locationInput" placeholder="Location"
-                                    aria-describedby="locationHelp">
-                                    <div id="locationHelp" class="form-text text-dark">Choose a location to search from</div>
-                                <label for="locationInput" class="form-label">Location</label>
-                            </div>
-                            <div class="mb-3 form-floating">
-                                <input type="text" class="form-control" id="industryInput" placeholder="Industry"
-                                    aria-describedby="industryHelp">
-                                    <div id="industryHelp" class="form-text text-dark">Choose an industry to search for</div>
-                                <label for="industryInput" class="form-label">Industry</label>
-                            </div>
-                            <button type="search" class="btn btn-secondary">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="searchBars shadow-lg p-3 mb-5 rounded position-absolute top-50 start-50 translate-middle">
+        <div class="text-center">
+            <h1 class="logo">Welcome!</h1>
+            <p>
+                Here at Rate My Workplace, we strive to create a place where we can keep businesses accountable for the
+                space they create for their employees. We want to make sure everyone has a safe and fair workplace, no
+                matter who they are. Browse nearby companies, search for businesses by industry, or find the specific
+                jobsite you need. See where they land and add your own rating to the equation. </p>
         </div>
+
+    </div>
 </main>
 
 {{#each companies as |company|}}

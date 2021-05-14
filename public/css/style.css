@@ -1,6 +1,6 @@
 .logo {
     font-family:'Josefin Sans', sans-serif;
-    color:rgb(177, 2, 2);
+    color:rgb(76, 0, 197);
     font-size:xx-large;
 }
 
@@ -9,9 +9,9 @@
 } */
 
 .searchBars {
-    position:absolute;
+    /* position:absolute;
     top: 40%;
-    right:38%;
+    right:38%; */
     font-weight:bolder;
     background-color:rgb(255, 255, 255, .75);
 }
