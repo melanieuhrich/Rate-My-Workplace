@@ -37,4 +37,4 @@ Created by Jeremy Joanet - Project Manager, Alfredo Tlahuel - Backend Developer 
 If a user wishes to help this project, we would like to add API functionality to populate the companies database with a user's search, and by extension add a search feature to find companies based on user's parameters.
 
 ## Screenshot
-![Screenshot](./public/assets/screenshot.PNG)
+![Screenshot](./public/assets/screenshot.png)
