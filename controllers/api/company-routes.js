@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Company } = require("../../models");
+const { Company, Review } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // Gets all companies
@@ -22,12 +22,25 @@ router.get("/", withAuth, async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const companyData = await Company.findByPk(req.params.id);
-
+    
+    const reviewData = await Review.findAll({
+        where: {
+            company_id: req.params.id
+        },
+        raw: true
+    })
+    
     const company = companyData.get({ plain: true });
+    
+    console.log(company)
 
-    res.render("company", {
-      ...company,
-    });
+    if(reviewData) {
+       // const reviews = reviewData.get({plain: true});
+        res.render("company", {company: company, reviews: reviewData});
+    } else {
+        res.render("company", {company: company, reviews: []});
+    }
+
   } catch (err) {
     res.status(500).json(err);
   }
