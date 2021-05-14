@@ -36,9 +36,9 @@ router.get("/:id", async (req, res) => {
 
     if(reviewData) {
        // const reviews = reviewData.get({plain: true});
-        res.render("company", {company: company, reviews: reviewData});
+        res.render("company", {company: company, reviews: reviewData, logged_in: req.session.logged_in});
     } else {
-        res.render("company", {company: company, reviews: []});
+        res.render("company", {company: company, reviews: [], logged_in: req.session.logged_in});
     }
 
   } catch (err) {
