@@ -14,26 +14,25 @@
         </form>
     </div>
 </nav>
-<main class="d-flex justify-content-center mainBody">           
+<main class="d-flex justify-content-center mainBody">
 
-<div class="container">
-<div class="row">
-{{#each companies as |company|}}
-<br>
-<div class="col-lg-6">
-<div class="card bg-light" style="width: 18rem;">
-    <div class="card-body">
-        <!-- Might be wrong??? -->
-        <a href="/query/companies/{{company.id}}">
-            <h5 class="card-title">{{company.name}}</h5>
-        </a>
-        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
-        <p class="card-text">Our Rating: {{company.our_rating}}</p>
+    <div class="container my-5">
+        <div class="row my-5">
+            {{#each companies as |company|}}
+            <br>
+            <div class="col-lg-6 my-2">
+                <div class="card bg-light" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Might be wrong??? -->
+                        <a href="/query/companies/{{company.id}}" class="nav-link link-primary">
+                            <h5 class="card-title">{{company.name}}</h5>
+                        </a>
+                        <h6 class="card-subtitle mb-2 text-muted">{{company.location}}</h6>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
     </div>
-</div>
-</div>
-{{/each}}
-</div>
-</div>
 
 </main>

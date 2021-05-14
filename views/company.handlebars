@@ -33,18 +33,11 @@
         </div>
         <div class="card col-sm-5 mx-5 bg-light">
             <div class="card-body text-center">
-                <h2>Location: {{company.location}}</h2>
+                <h2>HQ Location: {{company.location}}</h2>
             </div>
         </div>
     </div>
 
-    <div class="row my-5">
-        <div class="card col-sm-11 mx-5 bg-light">
-            <div class="card-body text-center">
-                <h2>Overall Rating: {{company.our_rating}}</h2>
-            </div>
-        </div>
-    </div>
     {{#if reviews.length}}
     <div>
         {{!-- review list populates here --}}
@@ -78,7 +71,7 @@
     </div>
 
     {{else}}
-        <div>
+        <div class="text-center">
             <h2>No Current Reviews, Be the First To Add One!</h2>
         </div>
     {{/if}}
