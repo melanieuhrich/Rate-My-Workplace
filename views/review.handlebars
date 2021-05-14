@@ -1,23 +1,24 @@
 <nav class="navbar navbar-light bg-light pt-5 ">
     <div class="container-fluid d-flex align-items-end">
-        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt="" class="pe-3">      Rate My Workplace</a>
+        <a class="navbar-brand logo d-flex align-items-end" href="/"><img src="/assets/Logo/logo1.png" alt=""
+                class="pe-3"> Rate My Workplace</a>
         <form class="d-flex">
             <a class="nav-link link-secondary" href="/query/resources">Resources</a>
             {{#if logged_in}}
             <a class="nav-link link-secondary" id='logout-button' href="">Logout</a>
             {{else}}
             <a class="nav-link link-secondary" href="/login">Log in/Sign up</a>
-            
+
             {{/if}}
             <a class="nav-link link-secondary" href="/query/companies">Company List</a>
             <a class="nav-link link-secondary" href="/query/about-us">About Us</a>
-            
+
         </form>
     </div>
 </nav>
 
-<div class="jumbotron jumbotron-fluid bg-light">
-    <div class="container">
+<div class="jumbotron jumbotron-fluid bg-light my-5">
+    <div class="text-center">
         <h1 class="display-4">Review {{company.name}}</h1>
     </div>
 </div>
@@ -25,43 +26,42 @@
     <div class="col review">
         <form class="row g-3">
             <div class="form-floating">
-                <input type="text" class="form-control" id="inputSafetyCulture" placeholder="Safety Culture">
-                <label for="inputSafetyCulture" class="form-label">Title your review</label>
+                <input type="text" class="form-control" id="review-title" placeholder="Title your review!">
+                <label for="review-title" class="form-label">Title your review</label>
             </div>
             <div>
-                <label for="customRange3" class="form-label">Safety Culture</label> <br>
+                <label for="safety-culture" class="form-label">Safety Culture</label> <br>
                 <label class="description">Rate the safety culture in your workplace on a scale of 0 to 5, with 0 being
                     not safe at all and 5 being very safe.</label>
-                <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range rating" min="0" max="5" step="1" id="safety-culture">
             </div>
             <div>
-                <label for="customRange3" class="form-label">Safety Training</label> <br>
+                <label for="safety-training" class="form-label">Safety Training</label> <br>
                 <label class="description">Does your workplace implement a safety training? How would you rate
                     it?</label>
-                <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range rating" min="0" max="5" step="1" id="safety-training">
             </div>
             <div>
-                <label for="customRange3" class="form-label">Hazard Identification</label> <br>
+                <label for="hazard-id" class="form-label">Hazard Identification</label> <br>
                 <label class="description">How would you rate your workplace's hazard identification practices?</label>
-                <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range rating" min="0" max="5" step="1" id="hazard-id">
             </div>
             <div>
-                <label for="customRange3" class="form-label">Leadership's Emphasis on Safety</label> <br>
+                <label for="lead-emphasis" class="form-label">Leadership's Emphasis on Safety</label> <br>
                 <label class="description">How would you rate your leadership's emphasis on safety?</label>
-                <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range rating" min="0" max="5" step="1" id="lead-emphasis">
             </div>
             <div>
-                <label for="customRange3" class="form-label">Safety Manager</label> <br>
-                <label class="description">Does your workplace have a safety manager? If so, how would you rate
-                    them?</label>
-                <input type="range" class="form-range rating" min="0" max="5" step="1" id="customRange3">
+                <label for="safety-manager" class="form-label">Safety Manager</label> <br>
+                <label class="description">Does your workplace have a safety manager? Left = No : Right = Yes.</label>
+                <input type="range" class="form-range rating" min="0" max="1" step="1" id="safety-manager">
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" id="inputSafetyCulture" placeholder="Safety Culture">
-                <label for="inputSafetyCulture" class="form-label">Tell us what you think...</label>
+                <input type="text" class="form-control" id="additional-content" placeholder="Safety Culture">
+                <label for="additional-content" class="form-label">Additional Comments...</label>
             </div>
             <div class="col-12 ratingSubmit">
-                <button type="submit" class="btn btn-primary">Submit Rating</button>
+                <button type="submit" id="review-submit" class="btn btn-primary">Submit Rating</button>
             </div>
         </form>
     </div>
