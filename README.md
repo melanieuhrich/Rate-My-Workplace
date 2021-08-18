@@ -23,7 +23,7 @@ This application has several pages that allow the user to access a variety of se
 - [Screenshot](#Screenshot)
 
 ## Usage
-Our site is fully deployed on Heroku at https://rate-my-workplace.herokuapp.com/login. To log in and view the functionality, please use the following criteria:
+Our site is fully deployed on Heroku at https://rate-my-workplace.herokuapp.com/login. To log in and view the functionality, please use the following criteria -- 
 
 Username: user09@email.com
 
