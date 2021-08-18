@@ -2,7 +2,7 @@
 
 ## Authors
 #### Jeremy Joanet 
-Project manager | [GitHub](mailto:https://github.com/Vygoth) | [email](JeremyJoanet@protonmail.com)
+Project manager | [GitHub](https://github.com/Vygoth) | [email](mailto:JeremyJoanet@protonmail.com)
 
 #### Alfredo Tlahuel
 Backend developer/presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](mailto:Vfredo602@gmail.com)
