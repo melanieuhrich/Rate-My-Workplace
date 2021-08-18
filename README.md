@@ -2,16 +2,16 @@
 
 ## Authors
 #### Jeremy Joanet 
-Project manager | [GitHub](https://github.com/Vygoth) | [email](JeremyJoanet@protonmail.com)
+Project manager | [GitHub](mailto:https://github.com/Vygoth) | [email](JeremyJoanet@protonmail.com)
 
 #### Alfredo Tlahuel
-Backend developer/presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](Vfredo602@gmail.com)
+Backend developer/presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](mailto:Vfredo602@gmail.com)
 
 #### Melanie Uhrich 
-Frontend designer & backend developer | [GitHub](https://github.com/melanieuhrich) | [email](melanieuhrich13@gmail.com)
+Frontend designer & backend developer | [GitHub](https://github.com/melanieuhrich) | [email](mailto:melanieuhrich13@gmail.com)
 
 #### Justin Lindsey
-Frontend designer & backend developer | [GitHub](https://github.com/JusticeGTR) | [email](justinlindseylhr@gmail.com)
+Frontend designer & backend developer | [GitHub](https://github.com/JusticeGTR) | [email](mailto:justinlindseylhr@gmail.com)
 
 ## Description
 This application has several pages that allow the user to access a variety of services. Upon creating an account, the user can find a company and its ratings, leave a review for the company, and view resources available to them. In a country with a high amount of workplace injuries and incidents, our site aims to help keep employers accountable and responsible.
