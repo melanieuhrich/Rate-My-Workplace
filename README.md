@@ -5,7 +5,7 @@
 Project manager | [GitHub](https://github.com/Vygoth) | [email](mailto:JeremyJoanet@protonmail.com)
 
 #### Alfredo Tlahuel
-Backend developer/presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](mailto:Vfredo602@gmail.com)
+Backend developer & presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](mailto:Vfredo602@gmail.com)
 
 #### Melanie Uhrich 
 Frontend designer & backend developer | [GitHub](https://github.com/melanieuhrich) | [email](mailto:melanieuhrich13@gmail.com)
