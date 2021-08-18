@@ -1,16 +1,16 @@
 # Rate My Workplace
 
 ## Authors
-### Jeremy Joanet 
+#### Jeremy Joanet 
 Project manager | [GitHub](https://github.com/Vygoth) | [email](JeremyJoanet@protonmail.com)
 
-### Alfredo Tlahuel
+#### Alfredo Tlahuel
 Backend developer/presenation coordinator | [GitHub](https://github.com/Vfredo602) | [email](Vfredo602@gmail.com)
 
-### Melanie Uhrich 
+#### Melanie Uhrich 
 Frontend designer & backend developer | [GitHub](https://github.com/melanieuhrich) | [email](melanieuhrich13@gmail.com)
 
-### Justin Lindsey
+#### Justin Lindsey
 Frontend designer & backend developer | [GitHub](https://github.com/JusticeGTR) | [email](justinlindseylhr@gmail.com)
 
 ## Description
